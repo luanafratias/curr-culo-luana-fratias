@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333; 
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #c1b7ad; 
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #7d6a58; 
+}
+
+/* HEADER */
+#Contato {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e0dedc; 
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+#Contato h1 {
+    font-size: 2.5rem;
+    color: #7d6a58; 
+    margin-bottom: 10px;
+}
+
+#Contato h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff; 
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+section h3 {
+    color: #7d6a58; 
+    margin-bottom: 25px;
+    border-bottom: 2px solid #c1b7ad;
+    padding-bottom: 5px;
+}
+
+h4 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+section ul {
+    margin-left: 30px;
+}
+
+section ul li {
+    margin-bottom: 20px;
+}
+
+/* PARÁGRAFOS */
+section p {
+    margin-bottom: 20px;
+}
+
+
+#Experiência\ Profissional ul,
+#Formação\ Acadêmica ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.redes-sociais {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.redes-sociais a {
+    font-size: 2rem;
+    color: #7d6a58;
+    margin: 0 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #c1b7ad;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    #Experiência\ Profissional ul,
+    #Formação\ Acadêmica ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+    }
+}
+.objetivo{
+    background-color: #f0ece8; 
+    border-left: 5px solid #7d6a58; 
+    padding: 25px 30px;
+    margin: 40px auto;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.objetivo h3 i {
+    margin-right: 10px; 
+    color: #7d6a58; 
+}
+
+.objetivo p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+@media screen and (max-width: 768px) {
+    
+    nav {
+        position: static; /* não fica sticky */
+        padding: 10px 0;
+    }
+
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+   
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
